@@ -10,6 +10,6 @@ JiraTagging:
 Approval:
   ApprovalGroups: 
     - Name: 'Something'
-      Users: 
-        - 'BrianCArnold'
+      Teams:
+        - GroupB
       Required: 1
