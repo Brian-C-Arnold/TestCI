@@ -1,0 +1,14 @@
+PullRequestTargetRegexs:
+  - 'main'
+
+JiraTagging:
+  ReadJira: false
+  Url: ''
+  GeneralPatterns:
+    - 'asdsd'
+
+Approval:
+  - Name: 'Something'
+    Users: 
+      - 'BrianCArnold'
+    Required: 1
