@@ -1,6 +1,9 @@
 name: SimpleWorkflow
 
 on:
+  push:
+    branches:
+      - 'main'
   pull_request:
     types:
       - opened
@@ -9,5 +12,6 @@ on:
       - 'main'
 jobs:
   Task:
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Hello, world!"
