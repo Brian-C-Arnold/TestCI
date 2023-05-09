@@ -11,7 +11,7 @@ Approval:
   ApprovalGroups: 
     - Name: 'Something'
       Teams:
-        - groupb
+        - GroupB
       # Users:
       #   - SPR-Brian
       Required: 1
