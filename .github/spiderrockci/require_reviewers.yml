@@ -1,0 +1,114 @@
+branches:
+  - 'main'
+
+groups:
+  FIX:
+    members:
+      - team:FIX
+    required: 1
+    paths:
+      - 'assemblies/SRFixBase/SRFixBase/FixSession/Transport/**'
+      - 'assemblies/SRFixBase/**'
+      - 'assemblies/SRFixShared/**'
+
+      - 'Tools.wf/SRFixViewer/**'
+
+      - 'servers/SpiderRock.Fix.ChildDropServer/**'
+      - 'servers/SpiderRock.Fix.ChildDropServer.CompositeTests/**'
+      - 'servers/SpiderRock.Fix.ClientGateway/**'
+      - 'servers/SpiderRock.Fix.ExecDropServer/**'
+      - 'servers/SpiderRock.Fix.OrderDropServer/**'
+      - 'servers/SpiderRock.Fix.SimpleClient/**'
+      - 'servers/SpiderRock.Fix.SimpleDropClientSingle/**'
+      - 'servers/SpiderRock.Fix.SimpleReviewRouter/**'
+      - 'servers/SRFixClientGateway/**'
+      - 'servers/SRFixCmeQuoteGateway/**'
+      - 'servers/SRFixCmeQuoteSimulator/**'
+      - 'servers/SRFixDropServer/**'
+      - 'servers/SRFixExecutionDropServer/**'
+      - 'servers/SRFixStreetGateway/**'
+      - 'servers/SRFixStreetPerfClient/**'
+      - 'servers/SRFixStreetPerfHarness/**'
+      - 'servers/SRFixStreetPerfSimulator/**'
+      - 'servers/SRFixStreetSimulator/**'
+      - 'servers/SRFixStreetSimulator.v2/**'
+      - 'servers/SRStreetFixPerfSimulator/**'
+      
+      - 'unittests/FixStreamRepoTrimmerTests/**'
+      - 'unittests/MockRemoteFixClient/**'
+      - 'unittests/Platform.Fix.Integration/**'
+      - 'unittests/SRFixClientGatewayTests/**'
+      - 'unittests/SRFixClientTemplateTests/**'
+      - 'unittests/SRFixClientUnitTests/**'
+      - 'unittests/SRFixDropServerTests/**'
+      - 'unittests/SRFixStageReview/**'
+      - 'unittests/SimpleFixOrderEntryHarnessTest/**'
+      - 'unittests/SpiderRock.Fix.ChildDropServer.Integration/**'
+      - 'unittests/SpiderRock.Fix.ClientGateway.Integration/**'
+      - 'unittests/SpiderRock.Fix.ExecDropServer.Integration/**'
+      - 'unittests/SpiderRock.Fix.OrderDropServer.Integration/**'
+
+  infra:
+    members:
+      - team:infra
+    required: 1
+    paths:
+      - 'assemblies/SRFixBase/SRFixBase/FixSession/Transport/**'
+
+      - '*.pl'
+      - '*.pm'
+
+      - 'root/definitions/**/_*.def'
+      - 'root/definitions/**/*mmr*/**'
+      - 'root/definitions/**/*mlink*/**'
+
+      - 'scripts/system/**'
+      - 'scripts/utilities/**'
+      - 'scripts/build.git/generate.py'
+      - 'scripts/build.git/corvil.py'
+      - 'scripts/modules/*_auto.py'
+      - 'scripts/modules/base.py'
+      - 'scripts/modules/env.py'
+
+      - 'assemblies/SRMsgCore/SRMsgCore/*.cs'
+      - 'assemblies/SRMsgBase/**'
+      - 'assemblies/MulticastFeedHandler.DBL/**'
+      - 'assemblies/SRMsgCore/SRMsgCore/Memory/**'
+      - 'assemblies/SRMsgCore/SRMsgCore/Services/**'
+      - 'assemblies/SRMsgCore/SRMsgCore/DataStructures/**'
+      - 'assemblies/SRMsgCore/SRMsgCore/Encoding/**'
+      - 'assemblies/SRMsgCore/SRMsgCore/MLink/**'
+      - 'assemblies/SRAvro/**'
+      - 'assemblies/SRElasticSearch/**'
+      - 'assemblies/SRJsonBourne/**'
+      - 'assemblies/SRProtobuf/**'
+      - 'assemblies/SRSE.Plugin/**'
+
+      - 'servers/SRSE/**'
+      - 'servers/MMRHost/**'
+      - 'servers/ArchiveHost/**'
+      - 'servers/MLinkServer/**'
+      - 'servers/MLinkMonitor/**'
+      - 'servers/MLinkBridge/**'
+      - 'servers/ChannelActivityPublisher/**'
+      - 'servers/ConfigDbBridge/**'
+      - 'servers/VLanBridge*/**'
+
+      - 'SpiderStream/**'
+      - 'windll/**'
+
+  Risk:
+    members:
+      - team:Risk
+    required: 1
+    paths:
+      - 'servers/AwayExecutionMarkupServer/**'
+      - 'unittests/SPDRRotationServer.v5.Tests/**'
+      - 'servers/AggregateRiskServer/**'
+      - 'servers/CoreRiskServer/**'
+      - 'assemblies/SpiderRock.Risk.EmulationHarness/**'
+      - 'servers/RotationRiskServer/**'
+      - 'unittests/SpiderRock.Risk.UnitTests/**'
+      - 'servers/AllocationServer/AllocationServerTests/**'
+      - 'servers/AllocationServer/**'
+      - 'servers/DatasetArchiver/DatasetArchiver/**'
