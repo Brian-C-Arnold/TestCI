@@ -8,7 +8,8 @@ JiraTagging:
     - 'asdsd'
 
 Approval:
-  - Name: 'Something'
-    Users: 
-      - 'BrianCArnold'
-    Required: 1
+  ApprovalGroups: 
+    - Name: 'Something'
+      Users: 
+        - 'BrianCArnold'
+      Required: 1
