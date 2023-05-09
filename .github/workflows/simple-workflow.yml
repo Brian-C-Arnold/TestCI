@@ -1,0 +1,13 @@
+name: SimpleWorkflow
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - 'main'
+jobs:
+  Task:
+    steps:
+      - run: echo "Hello, world!"
