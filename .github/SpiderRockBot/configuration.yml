@@ -5,7 +5,7 @@ JiraTagging:
   ReadJira: false
   Url: ''
   GeneralPatterns:
-    - 'SPR-\\d+'
+    - '(?:(?:[^\w]|^)((?:SPR|SRC|SRM|SA|DOG|BIL|CSP|NG)-[0-9]{1,}))'
 
 Approval:
   ApprovalGroups: 
