@@ -5,7 +5,7 @@ JiraTagging:
   ReadJira: false
   Url: ''
   GeneralPatterns:
-    - 'asdsd'
+    - 'SPR-\\d+'
 
 Approval:
   ApprovalGroups: 
